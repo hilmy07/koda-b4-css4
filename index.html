@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body > main > div {
+        display: grid;
+        grid-template-columns: repeat(4, 50px);
+        grid-template-rows: repeat(5, 50px);
+        gap: 10px;
+        margin-left: 30px;
+      }
+      body > main > div > div {
+        background-color: #f0f0f0;
+      }
+
+      header {
+        margin-left: 50px;
+      }
+
+      body > main > div > div:nth-child(18) {
+        grid-column: span 2;
+      }
+
+      body > main > div > div:nth-child(19) {
+        display: none;
+      }
+
+      body > main > div > div:nth-child(8),
+      body > main > div > div:nth-child(12),
+      body > main > div > div:nth-child(16),
+      body > main > div > div:nth-child(20) {
+        background-color: #de14bd;
+      }
+
+      body > main > div > div:nth-child(8) > p,
+      body > main > div > div:nth-child(12) > p,
+      body > main > div > div:nth-child(16) > p,
+      body > main > div > div:nth-child(20) > p {
+        color: white;
+      }
+
+      body > main {
+        margin-top: 50px;
+      }
+
+      body > main > div > div > p {
+        margin-left: 20px;
+      }
+
+      body > main > div > div:nth-child(18) > p {
+        margin-left: 50px;
+      }
+      body > main > div > div:nth-child(4) > p {
+        margin-left: 10px;
+      }
+
+      body > main > div > div:nth-child(1),
+      body > main > div > div:nth-child(2),
+      body > main > div > div:nth-child(3),
+      body > main > div > div:nth-child(4) {
+        background-color: #fff;
+      }
+
+      body > main div > div {
+        border-radius: 5px;
+      }
+
+      /* body > main > div > div:nth-child(2) {
+        grid-column: span 2;
+      }
+
+      body > main > div > div:nth-child(3) {
+        display: none;
+      } */
+      body > main > h1 {
+        margin-left: 150px;
+      }
+      main p {
+        font-size: 16px;
+      }
+
+      body {
+        margin: 100px 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Simple Calculator</h2>
+    </header>
+    <main>
+      <h1><b>203,908</b></h1>
+      <div>
+        <div>
+          <p><b>C</b></p>
+        </div>
+        <div></div>
+        <div></div>
+        <div>
+          <p><b>DEL</b></p>
+        </div>
+        <div>
+          <p><b>7</b></p>
+        </div>
+        <div>
+          <p><b>8</b></p>
+        </div>
+        <div>
+          <p><b>9</b></p>
+        </div>
+        <div>
+          <p><b>/</b></p>
+        </div>
+        <div>
+          <p><b>4</b></p>
+        </div>
+        <div>
+          <p><b>5</b></p>
+        </div>
+        <div>
+          <p><b>6</b></p>
+        </div>
+        <div>
+          <p><b>-</b></p>
+        </div>
+        <div>
+          <p><b>1</b></p>
+        </div>
+        <div>
+          <p><b>2</b></p>
+        </div>
+        <div>
+          <p><b>3</b></p>
+        </div>
+        <div>
+          <p><b>x</b></p>
+        </div>
+        <div>
+          <p><b>.</b></p>
+        </div>
+        <div>
+          <p><b>0</b></p>
+        </div>
+        <div></div>
+        <div>
+          <p><b>+</b></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
